@@ -1,4 +1,9 @@
-const slides = [
+createApp( {
+    data(){
+        return {
+            // slides: slides,
+            // currentIndex: 0,
+slides = [
     {
       image: './img/01.webp',
       title: "Marvel's Spiderman Miles Morale",
@@ -24,5 +29,18 @@ const slides = [
       title: "Marvel's Avengers",
       text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
     },
-  ]
-  
+  ],
+  currentIndex; 0,
+
+
+        }
+    },
+    methods: {
+        nextSlide() {
+            console.log('next')
+        },
+        prevSlide() {
+            console.log('prev')
+        },
+    },
+} ).mount('#app')
